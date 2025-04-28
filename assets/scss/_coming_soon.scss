@@ -1,0 +1,80 @@
+.coming-soon-body {
+    background-image: url('images/bg01.jpg');
+    background-size: cover;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 100vh; // Full-screen height
+    height: 100vh;
+
+
+
+    .construction-bg {
+        display: flex; // Flex for centering content
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // padding: 3rem 1rem; // Responsive padding
+
+        .construction-container {
+            background-color: rgba(255, 255, 255, 0.7); // Background color for the container
+            border: 1px solid #ddd; // Subtle border
+            border-radius: 0.5rem; // Rounded corners
+            padding: 2rem;
+            height: 80vh;
+            width: 80vw;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Box shadow for depth
+            text-align: center;
+
+            @media(max-width:576px) {
+                padding: 1rem;
+                height: 90vh;
+                width: 90vw;
+            }
+
+            .construction-content {
+                gap: 10px;
+                margin-top: -60px;
+
+                @media(max-width:576px) {
+                    margin-top: -20px;
+                    gap: 0;
+                }
+
+                .logo-wrapper {
+                    margin-bottom: 1.5rem;
+
+                    img {
+                        // max-width: 150px; // Logo size
+                        // width:clamp(1rem, 2.2vw, 3rem); 
+                        max-width: 500px;
+                        width: 80vw;
+                        min-width: 200px;
+                        height: auto; // Maintain aspect ratio
+
+                        @media(max-width:576px) {
+
+                            width: 100%;
+                        }
+
+                    }
+                }
+
+                .construction-message {
+                    font-size: clamp(1rem, 1.8vw, 3rem);// Responsive font size
+                    font-weight: 500; // Medium weight for emphasis
+                    color: #333; // Adjust color to match the design theme
+
+                    @media(max-width:1366px) {
+                        font-size:   clamp(1.3rem, 2.9vw, 3rem);
+                    }
+                    @media(max-width:576px) {
+            
+                        font-size: clamp(1.3rem, 1.8vw, 3rem); // Responsive font size
+                    }
+                }
+            }
+
+        }
+    }
+}
