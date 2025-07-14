@@ -1712,6 +1712,7 @@ img {
 }
 @media (max-width: 576px) {
   .main-body--wrapper .hot-sales--wrapper .hs-content--wrapper .hs-item--wrapper .hs-item-image {
+    height: 140px;
     margin-bottom: 10px;
   }
 }
@@ -2216,7 +2217,7 @@ img {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  border: 2px solid rgba(201, 78, 57, 0.35);
+  border: 0px solid rgba(201, 78, 57, 0.35);
   overflow: visible;
   height: 310px;
 }
@@ -2298,6 +2299,35 @@ img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.constant-tilt-shake {
+  width: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+}
+.constant-tilt-shake img {
+  animation: tilt-shaking 0.3s infinite;
+  width: 100%;
+  height: 100%;
 }
 
 .contactus-section--wrapper {
