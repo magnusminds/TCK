@@ -200,9 +200,12 @@ img {
         .navbar-brand {
             height: 64px;
 
+            @media(max-width:1200px) {
+                margin:0;
+                margin-left: auto;
+            }
             @media(max-width:576px) {
                 height: 56px;
-                margin: 4px 0;
             }
 
             @media(max-width:376px) {
@@ -222,6 +225,9 @@ img {
             color: black;
             margin-left: auto;
 
+            @media(max-width:1200px) {
+                margin-left: unset;
+            }
             @media(max-width:992px) {
                 display: flex;
             }
