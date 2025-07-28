@@ -150,10 +150,15 @@ img {
 .header--wrapper .navbar .navbar-brand {
   height: 64px;
 }
+@media (max-width: 1200px) {
+  .header--wrapper .navbar .navbar-brand {
+    margin: 0;
+    margin-left: auto;
+  }
+}
 @media (max-width: 576px) {
   .header--wrapper .navbar .navbar-brand {
     height: 56px;
-    margin: 4px 0;
   }
 }
 @media (max-width: 376px) {
@@ -171,6 +176,11 @@ img {
   border: none;
   color: black;
   margin-left: auto;
+}
+@media (max-width: 1200px) {
+  .header--wrapper .navbar .navbar-toggler {
+    margin-left: unset;
+  }
 }
 @media (max-width: 992px) {
   .header--wrapper .navbar .navbar-toggler {
